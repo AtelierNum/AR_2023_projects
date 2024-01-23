@@ -1,0 +1,41 @@
+#MyButton {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+  left: calc(50% - 240px/2);
+  bottom: 30px;
+  background: #000000;
+  z-index: 9999;
+  /* line-height: 100px; */
+  text-align: center;
+  color: white;
+}
+
+
+#MyButton2 {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+  left: calc(50% - 240px/2);
+  bottom: 30px;
+  background: #000000;
+  z-index: 9999;
+  /* line-height: 100px; */
+  text-align: center;
+  color: white;
+}
+
+
+
+#MyButton3 {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+  left: calc(50% - 240px/2);
+  bottom: 30px;
+  background: #000000;
+  z-index: 9999;
+  /* line-height: 100px; */
+  text-align: center;
+  color: white;
+}
