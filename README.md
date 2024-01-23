@@ -6,7 +6,7 @@ by Ahhyun Lee and Yunkteong Lee
 
 https://AtelierNum.github.io/ARbook/index.html
 
-![](/qr-code_MurielCooper.png)
+<img src="/qr-code_MurielCooper.png" width="250" height="250"/>
 
 original : https://replit.com/@b2renger/ARbook
 
@@ -16,12 +16,13 @@ by Mael Battistutti and Anne Flore Leduc
 
 https://AtelierNum.github.io/andree-putman/index.html
 
-![](/qr-code_AndreePutman.png)
+<img src="/qr-code_AndreePutman.png" width="250" height="250"/>
 
 original : https://replit.com/@b2renger/andree-putman
 
 https://AtelierNum.github.io/andree-putman_scene/index.html
 
-![](/qr-code_AndreePutman_scene.png)
+<img src="/qr-code_AndreePutman_scene.png" width="250" height="250"/>
+
 
 original : https://replit.com/@b2renger/andreeputmanscene
