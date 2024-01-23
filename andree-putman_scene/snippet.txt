@@ -1,0 +1,19 @@
+<model-viewer src="Scenefinale.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.66" data-dashlane-shadowhost="true" data-dashlane-observed="true" shadow-softness="0.46">
+    <button class="Hotspot" slot="hotspot-18" data-surface="1 1 2130 2146 2145 0.332 0.596 0.072" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Boîte 3 Boules</div>
+    </button><button class="Hotspot" slot="hotspot-19" data-surface="3 0 194 202 200 0.398 0.564 0.038" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Table Basse Silvera</div>
+    </button><button class="Hotspot" slot="hotspot-20" data-surface="0 0 22 122 93 0.181 0.748 0.071" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Boîte Cube</div>
+    </button><button class="Hotspot" slot="hotspot-21" data-surface="2 1 1090 1103 1091 0.240 0.347 0.413" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Fauteuil Lotus</div>
+    </button><button class="Hotspot" slot="hotspot-22" data-surface="4 0 393 392 405 0.615 0.251 0.134" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Luminatore</div>
+    </button>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
