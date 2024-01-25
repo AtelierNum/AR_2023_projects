@@ -6,8 +6,6 @@ by Ahhyun Lee and Yunkteong Lee
 
 https://AtelierNum.github.io/AR_2023_projects/ARbook/index.html
 
-<img src="/qr-code_MurielCooper.png" width="250" height="250"/>
-
 original : https://replit.com/@b2renger/ARbook
 
 
@@ -16,13 +14,18 @@ by Mael Battistutti and Anne Flore Leduc
 
 https://AtelierNum.github.io/AR_2023_projects/andree-putman/index.html
 
-<img src="/qr-code_AndreePutman.png" width="250" height="250"/>
+(original : https://replit.com/@b2renger/andree-putman) 
 
-original : https://replit.com/@b2renger/andree-putman
+
 
 https://AtelierNum.github.io/AR_2023_projects/andree-putman_scene/index.html
 
-<img src="/qr-code_AndreePutman_scene.png" width="250" height="250"/>
+(original : https://replit.com/@b2renger/andreeputmanscene)
 
 
-original : https://replit.com/@b2renger/andreeputmanscene
+# AR Charlotte Perriand
+by Delphine Monti and Elsa Trumel
+
+https://AtelierNum.github.io/AR_2023_projects/charlotte-perriand/index.html
+
+(original : https://replit.com/@b2renger/Realite-augmentee-PERRIAND)
