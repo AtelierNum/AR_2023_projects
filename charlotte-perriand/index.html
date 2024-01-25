@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js">
+
+  </script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/3.1.0/aframe/build/aframe-ar.js">
+
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<button id="button" class="mybutton"> Click to play video</button>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <script>
+    let b = document.getElementById("button")
+    b.style.visibility = 'hidden'
+    b.addEventListener("click", function () {
+      document.querySelector("#vid").play();
+    })
+
+
+    AFRAME.registerComponent("vidhandler", {
+      init: function () {
+        this.toggle = false;
+        document.querySelector("#vid").pause(); //reference to the video
+      },
+      tick: function () {
+        if (document.querySelector("#vid-marker").object3D.visible == true) { // get the state of our marker : is it visible ?
+          document.getElementById("button").style.visibility = 'visible'
+          if (!this.toggle) {
+            this.toggle = true;
+            document.querySelector("#vid").play();
+          }
+        } else {
+          document.getElementById("button").style.visibility = 'hidden'
+          this.toggle = false;
+          document.querySelector("#vid").pause();
+        }
+      }
+    });
+  </script>
+
+  <a-scene embedded
+    arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; trackingMethod: best ; changeMatrixMode: modelViewMatrix;"
+    vr-mode-ui="enabled: false"
+    renderer="sortObjects: true; antialias: true; colorManagement: true; physicallyCorrectLights; logarithmicDepthBuffer: true;"
+    smooth=" true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5" sourceWidth="800" sourceHeight="600"
+    displayWidth="1280" displayHeight="720">
+
+    <a-assets>
+      <img id="bibliotheque" src="./assets/bibliotheque.jpg">
+      <img id="perriand-photo" src="./assets/perriand-photo.jpg">
+      <img id="Nuage" src="./assets/Nuage.jpg">
+      <img id="Detail" src="./assets/Detail.JPG">
+      <img id="Tunisie" src="./assets/Tunisie.JPG">
+      <video id="vid" src="./assets/charlotte.mp4" autoplay="true" loop="true" preload="auto" controls="true"
+        playsinline="" webkit-playsinline=""></video>
+    </a-assets>
+
+    <a-marker type="barcode" value="0">
+      <a-image src="#bibliotheque" rotation="-90 0 0" width="2" height="2"></a-image>
+      <a-text value="Croquis de la bibliothèque" side="double" position="0 1.1 0" rotation="270 0 0" align="center">
+      </a-text>
+    </a-marker>
+
+    <a-marker type="barcode" value="1">
+      <a-image src="#perriand-photo" rotation="-90 0 0" width="2" height="2"></a-image>
+      <a-text value="Photographie de Charlotte Perriand en 1991" side="double" position="0 1.1 0" rotation="270 0 0"
+        align="center"></a-text>
+    </a-marker>
+
+    <a-marker vidhandler id="vid-marker" type="barcode" value="2">
+      <a-video src="#vid" side="double" rotation="-90 0 0" width="2" height="1.5"></a-video>
+      <a-text value="Charlotte Perriand, pionniere de l'art de vivre - Arte" side="double" position="0 1.1 0"
+        rotation="270 0 0" align="center"></a-text>
+    </a-marker>
+
+    <a-marker type="barcode" value="3">
+      <a-image src="#Nuage" rotation="-90 0 0" width="2" height="2"></a-image>
+      <a-text value="Bibliotheque murale Nuage de Charlotte Perriand" side="double" position="0 1.1 0"
+        rotation="270 0 0" align="center"></a-text>
+    </a-marker>
+
+    <a-marker type="barcode" value="4">
+      <a-image src="#Detail" rotation="-90 0 0" width="2" height="2"></a-image>
+      <a-text value="Detail de la bibliothèque Tunisie" side="double" position="0 1.1 0" rotation="270 0 0"
+        align="center"></a-text>
+    </a-marker>
+
+    <a-marker type="barcode" value="5">
+      <a-image src="#Tunisie" rotation="-90 0 0" width="2" height="2"></a-image>
+      <a-text value="Bibliotheque Tunisie par Charlotte Perriand" side="double" position="0 1.1 0" rotation="270 0 0"
+        align="center"></a-text>
+    </a-marker>
+
+
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+  </a-scene>
+
+</body>
+
+</html>
