@@ -29,3 +29,11 @@ by Delphine Monti and Elsa Trumel
 https://AtelierNum.github.io/AR_2023_projects/charlotte-perriand/index.html
 
 (original : https://replit.com/@b2renger/Realite-augmentee-PERRIAND)
+
+
+# AR Keith Haring
+by Anais Ramahandridona and Marguerite Barbeir
+
+https://AtelierNum.github.io/AR_2023_projects/keith-haring/index.html
+
+(original : https://replit.com/@b2renger/keith-haring#index.html)

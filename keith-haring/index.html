@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js">
+
+  </script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/3.1.0/aframe/build/aframe-ar.js">
+
+  </script>
+</head>
+
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <a-scene embedded arjs="sourceType: webcam;" vr-mode-ui="enabled: false"
+    renderer="sortObjects: true; antialias: true; colorManagement: true; physicallyCorrectLights; logarithmicDepthBuffer: true;"
+    arjs="trackingMethod: best;
+    detectionMode :'color_and_matrix' 
+    changeMatrixMode: 'modelViewMatrix'; " smooth="true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5"
+    sourceWidth="800" sourceHeight="600" displayWidth="1280" displayHeight="720">
+    <a-assets>
+      <img id="coeur" src="coeurfinal.png">
+      <img id="tiktok" src="KH.png">
+      <img id="fleur" src="couleur final 2.png">
+    </a-assets>
+
+    <a-marker type="pattern" url="pattern-carré1-100.patt">
+      <a-image src="#coeur" rotation="90 0 180" width="0.5" height="0.5"></a-image>
+    </a-marker>
+
+    <a-marker type="pattern" url="pattern-carré 2-100.patt">
+      <a-image src="#tiktok" rotation="90 0 180" width="0.5" height="0.5"></a-image>
+    </a-marker>
+
+    <a-marker type="pattern" url="pattern-fleur final-100.patt">
+      <a-image src="#fleur" rotation="90 0 180" width="0.5" height="0.5"></a-image>
+    </a-marker>
+
+
+
+
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+  </a-scene>
+
+</body>
+
+</html>
